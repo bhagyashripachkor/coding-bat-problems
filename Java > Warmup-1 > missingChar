@@ -1,0 +1,9 @@
+public String missingChar(String str, int n) {
+int len = str.length();
+  String firsthalf = str.substring(0, n);
+ 
+  String secondhalf = str.substring(n+1, len);
+  
+  return firsthalf + secondhalf ;
+  
+}
