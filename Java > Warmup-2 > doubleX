@@ -1,0 +1,17 @@
+
+Given a string, return true if the first instance of "x" in the string is immediately followed by another "x". 
+
+doubleX("axxbb") → true
+doubleX("axaxax") → false
+doubleX("xxxxx") → true
+
+//solution
+boolean doubleX(String str) {
+  int ind = str.indexOf("x");
+  if(ind == -1)
+  return false;
+  if(ind+1 >= str.length())
+  return false;
+  return str.substring(ind+1, ind+2).equals("x");
+  
+}
